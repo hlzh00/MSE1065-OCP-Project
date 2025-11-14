@@ -2,12 +2,9 @@ downloading the folder from the github link:
 https://github.com/hlzh00/MSE1065-OCP-Project
 To ensure you get the most updated version
 
-To run the notebook yourself, I recommend creating a new conda virtual environment and install the dependencies. 
+To run the notebook yourself, I recommend creating a new conda virtual environment.
 
-Once your virtual env is activated, download the v1 folder, cd into the folder, and use command 
-pip install -r requirements.txt
-
-It will automatically install all the dependencies.
+Once your virtual env is activated, download the v1 folder, cd into the folder, and use command  `pip install -r requirements.txt`. It will automatically install all the dependencies.
 
 I extracted all the training data into a csv file called training_FULL.csv
 I then separated it into 2 sets of data: one with 1 H atom as the adsorbate, one with no adsorbates, called training_h_FULL.csv and training_no_ads_FULL.csv respectively.
