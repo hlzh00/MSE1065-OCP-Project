@@ -1,7 +1,3 @@
-downloading the folder from the github link:
-https://github.com/hlzh00/MSE1065-OCP-Project
-To ensure you get the most updated version
-
 To run the notebook yourself, I recommend creating a new conda virtual environment.
 
 Once your virtual env is activated, download the v1 folder, cd into the folder, and use command:
