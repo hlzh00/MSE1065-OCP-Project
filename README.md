@@ -35,6 +35,7 @@ We discussed to use the following methods:
 - Linear regression
 - Non-linear regression
 - Classification (maybe tree-based vs. logistic regression)
+
 Optional advanced methods:
 - Neural network
 
