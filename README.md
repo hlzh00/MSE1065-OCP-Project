@@ -40,16 +40,13 @@ If using cross validation, which is probably a good idea anyway since the H-adso
 
 
 **NOTES:**
-The dataset for H-adsorbate relaxed energies is much smaller than the no-adsorbate relaxed energies dataset. This means the predicted target value (relaxed E_surface+H) will have a higher uncertainty. I think this will be important to include in our presentation or report.
-
-Also, when we do the screening step, we might need to be mindful of the inputs for our model, we cannot use materials that are too different from the dataset or it might not extrapolate properly.
+The H-ads dataset is much smaller than the no-ads dataset. This means the predicted target (relaxed E_surface+H) will have a higher uncertainty. I think this will be important to include in our presentation or final report.
+Also, when we do the screening step, we might need to be mindful of the inputs for our model; we probably cannot use materials that are too different from the dataset or the model might not extrapolate properly.
 
 We discussed to use the following methods:
-
-Linear regression
-Non-linear regression
-Classification (maybe tree-based vs. logistic regression)
-
+- Linear regression
+- Non-linear regression
+- Classification (maybe tree-based vs. logistic regression)
 Optional advanced methods:
-Neural network ?
+- Neural network
 
