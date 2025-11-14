@@ -17,27 +17,19 @@ training_no_ads_FULL has around 15000 entries
 I only created a small sample of the full dataset (n=100) to test the featurization process.
 I will provide the full featurized dataset this weekend but you can also try to run it yourself, it just takes a long time. To featurize the full dataset, I provided comments on how to edit the code. U just need to change some file names.
 
-Important: some entries are missing structural data, which are these rows: 
-
-DensityFeatures:
+Important: some entries are missing structural data, which are these columns: 
 - density
 - vpa
 - packing fraction
-
-GlobalSymmetryFeatures:
 - spacegroup_num
 - crystal_system
 - crystal_system_int
 - is_centrosymmetric
 - n_symmetry_ops
 
-I think the right step would be to remove these entries entirely before training the model.
+I think the right step would be to remove entries missing these features entirely. It should only be a handful. 
 
-The dataset also provides a validate and test set, but I haven’t extracted those. I will work on extracting those datasets this weekend.
-
-But if you need to test your model and I haven’t provided those datasets you can try to do it yourself, just follow the same algorithm I used for the training dataset and feed it through the same featurizers. 
-If using cross validation, which is probably a good idea anyway since the H-adsorbate dataset is so small, then we don’t actually need the validate set I guess. Just extract the test set should be enough. 
-
+OCP also provides a validate and a test set, but I haven’t extracted those. I will work on extracting those datasets this weekend. But if you need to test your model and I haven’t provided those datasets you can try to do it yourself, just follow the same algorithm I used for the training dataset and feed it through the same featurizers. If using cross validation, which is probably a good idea anyway since the H-ads dataset is so small, then we won't need the validate set.
 
 **NOTES:**
 The H-ads dataset is much smaller than the no-ads dataset. This means the predicted target (relaxed E_surface+H) will have a higher uncertainty. I think this will be important to include in our presentation or final report.
