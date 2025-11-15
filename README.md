@@ -1,4 +1,4 @@
-To run the notebook yourself, I recommend creating a new conda virtual environment.
+To run the notebook yourself, I recommend creating a new virtual environment.
 
 Once your virtual env is activated, download the v1 folder, cd into the folder, and use command:
 
