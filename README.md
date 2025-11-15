@@ -1,16 +1,25 @@
-To run the notebook yourself, I recommend creating a new virtual environment.
+To run the notebook, I recommend creating a new virtual environment.
 
 ## venv
-From the project directory, create a new python virtual environment with `python -m venv .venv`
 
-activate the environment with `source .venv/bin/activate`
+If you are using python's venv, do this from the project directory
 
-once your virtual environment is activated, use `pip install -r requirements.txt` to install all the dependencies.
-
-You can check the list of installed dependencies with `pip list`
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
 ## Conda
-If you are using conda, create a new conda environment with `conda env create -f environment.yml`
+
+If you are using conda:
+
+```
+conda config --set channel_priority flexible
+conda env create -f environment.yml
+```
+
+## Description
 
 I extracted all the training data into a csv file called training_FULL.csv
 I then separated it into 2 sets of data: one with 1 H atom as the adsorbate, one with no adsorbates, called training_h_FULL.csv and training_no_ads_FULL.csv respectively.
