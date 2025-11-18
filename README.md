@@ -41,3 +41,21 @@ OCP also provides a validate and a test set, but I haven’t extracted those. I 
 	- Optional advanced methods:
 		- Neural network
 
+## Updates
+
+I tested out a decision tree regressor model with the current dataset.
+
+H-ads dataset:
+- training R^2 = 0.46
+- CV R^2 = 0.31
+
+no-ads dataset:
+- training R^2 = 0.65
+- CV R^2 = 0.46
+
+Full set of features are used.
+
+*to do*
+
+Try out different models. 
+Maybe try out classification? research and see if it makes sense with y_relaxed. 
